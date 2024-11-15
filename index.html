@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juego del Colgado</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="hangman-drawing">
+      <canvas id="hangmanCanvas" width="200" height="300"></canvas>
+    </div>
+    
+    <div class="message">
+      <p id="win-message" class="win-message" style="display: none;">Ganaste, Felicidades!</p>
+      <p>Letras incorrectas: <span id="wrong-letters"></span></p>
+    </div>
+
+    <div class="word-container">
+      <div id="word-display" class="word-display"></div>
+    </div>
+
+    <div class="input-container">
+      <input type="text" id="guess-input" maxlength="1" placeholder="Ingresa una letra" />
+      <button id="guess-button">Adivinar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
